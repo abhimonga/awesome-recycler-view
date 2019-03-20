@@ -135,12 +135,12 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=0;i<jArray.length();i++){
                     JSONObject json_data = jArray.getJSONObject(i);
                     data fishData=new data();
-                    fishData.title= json_data.getString("Metal");
-                    fishData.rate= json_data.getString("Rate");
-                    fishData.open= json_data.getString("Open");
-                    fishData.close= json_data.getString("Close");
-                    fishData.high= json_data.getString("High");
-                    fishData.low= json_data.getString("Low");
+                    fishData.title= json_data.getString("Title");
+                    fishData.target1= json_data.getString("Target 1");
+                    fishData.target2= json_data.getString("Target 2");
+                    fishData.tareget3= json_data.getString("Target 3");
+                    fishData.sl= json_data.getString("SL");
+
                     data.add(fishData);
                 }
 

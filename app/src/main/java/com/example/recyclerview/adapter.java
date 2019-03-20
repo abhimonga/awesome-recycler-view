@@ -16,17 +16,17 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
         private List<data> list;
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            public TextView title, year, rate,open,close,high,low;
+            public TextView title, target1,target2,target3,sl;
 
             public MyViewHolder(View view) {
                 super(view);
                 title = (TextView) view.findViewById(R.id.title);
-                rate = (TextView) view.findViewById(R.id.rate);
-                open = (TextView) view.findViewById(R.id.open);
-                close = (TextView) view.findViewById(R.id.close);
-                high = (TextView) view.findViewById(R.id.high);
-                low= (TextView) view.findViewById(R.id.low);
-                year = (TextView) view.findViewById(R.id.year);
+                target1 = (TextView) view.findViewById(R.id.target1);
+                target2 = (TextView) view.findViewById(R.id.target2);
+                target3 = (TextView) view.findViewById(R.id.target3);
+                sl = (TextView) view.findViewById(R.id.sl);
+//                low= (TextView) view.findViewById(R.id.low);
+//                year = (TextView) view.findViewById(R.id.year);
             }
         }
 
@@ -47,12 +47,12 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
         public void onBindViewHolder(MyViewHolder holder, int position) {
             data movie = list.get(position);
             holder.title.setText(movie.getTitle());
-            holder.rate.setText(movie.getRate());
-            holder.open.setText(movie.getOpen());
-            holder.close.setText(movie.getClose());
-            holder.high.setText(movie.getHigh());
-            holder.low.setText(movie.getLow());
-            holder.year.setText(movie.getYear());
+            holder.target1.setText(movie.getTarget1());
+            holder.target2.setText(movie.getTarget2());
+            holder.target3.setText(movie.getTareget3());
+            holder.sl.setText(movie.getSl());
+//            holder.low.setText(movie.getLow());
+//            holder.year.setText(movie.getYear());
         }
 
         @Override

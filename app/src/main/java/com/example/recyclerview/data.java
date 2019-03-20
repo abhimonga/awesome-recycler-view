@@ -1,6 +1,6 @@
 package com.example.recyclerview;
 public class data {
-    public String title, rate, year,open,close,high,low;
+    public String title,target1,target2,tareget3,sl;
 
 
     public data() {
@@ -11,52 +11,39 @@ public class data {
         return title;
     }
 
-    public void setTitle(String name) {
-        this.title = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getYear() {
-        return year;
+    public String getTarget1() {
+        return target1;
     }
 
-    public void setYear(String year) {
-        this.year = year;
+    public void setTarget1(String target1) {
+        this.target1 = target1;
     }
 
-    public String getRate() {
-        return rate;
+    public String getTarget2() {
+        return target2;
     }
 
-    public void setRate(String rate) {
-        this.rate = rate;
-    }
-    public String getOpen() {
-        return open;
+    public void setTarget2(String target2) {
+        this.target2 = target2;
     }
 
-    public void setOpen(String open) {
-        this.open = open;
-    }
-    public String getClose() {
-        return close;
+    public String getTareget3() {
+        return tareget3;
     }
 
-    public void setClose(String close) {
-        this.close = close;
-    }
-    public String getHigh() {
-        return high;
+    public void setTareget3(String tareget3) {
+        this.tareget3 = tareget3;
     }
 
-    public void setHigh(String high) {
-        this.high = high;
-    }
-    public String getLow() {
-        return low;
+    public String getSl() {
+        return sl;
     }
 
-    public void setLow(String low) {
-        this.low = low;
+    public void setSl(String sl) {
+        this.sl = sl;
     }
-    
 }
