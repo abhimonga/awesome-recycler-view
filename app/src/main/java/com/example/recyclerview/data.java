@@ -1,16 +1,10 @@
 package com.example.recyclerview;
 public class data {
-    private String title, rate, year,open,close,high,low;
+    public String title, rate, year,open,close,high,low;
 
 
-    public data(String title, String rate, String year,String open,String close,String high,String low) {
-        this.title = title;
-        this.rate = rate;
-        this.open = open;
-        this.close = close;
-        this.high = high;
-        this.low = low;
-        this.year = year;
+    public data() {
+
     }
 
     public String getTitle() {

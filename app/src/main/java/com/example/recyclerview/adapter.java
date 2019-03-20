@@ -13,7 +13,7 @@ import java.util.List;
 
 public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
-        private List<data> moviesList;
+        private List<data> list;
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             public TextView title, year, rate,open,close,high,low;
@@ -32,7 +32,7 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
 
         public adapter(List<data> moviesList) {
-            this.moviesList = moviesList;
+            this.list = moviesList;
         }
 
         @Override
@@ -45,7 +45,7 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
-            data movie = moviesList.get(position);
+            data movie = list.get(position);
             holder.title.setText(movie.getTitle());
             holder.rate.setText(movie.getRate());
             holder.open.setText(movie.getOpen());
@@ -57,6 +57,6 @@ public class adapter extends RecyclerView.Adapter<adapter.MyViewHolder> {
 
         @Override
         public int getItemCount() {
-            return moviesList.size();
+            return list.size();
         }
     }
